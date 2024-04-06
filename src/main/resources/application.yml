@@ -9,7 +9,7 @@ spring:
     active: dev
 
   config:
-    import: configserver:http://${CONFIG_SERVER_ADDRESS}}
+    import: configserver:http://${CONFIG_SERVER_ADDRESS}
 
   cloud:
     config:
