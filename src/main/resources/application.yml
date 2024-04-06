@@ -1,0 +1,16 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: eureka
+
+  profiles:
+    active: dev
+
+  config:
+    import: configserver:http://172.17.0.2:8888
+
+  cloud:
+    config:
+      fail-fast: true
