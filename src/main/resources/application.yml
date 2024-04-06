@@ -9,7 +9,7 @@ spring:
     active: dev
 
   config:
-    import: configserver:http://172.17.0.2:8888
+    import: configserver:http://${CONFIG_SERVER_IP}:${CONFIG_SERVER_PORT}}
 
   cloud:
     config:
